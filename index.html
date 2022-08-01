@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+
+    <title>THE LAST OF US</title>
+</head>
+<body>
+    <section>
+        <video autoplay loop muted plays-inline id="first">
+            <source src="media/tlou2.mp4">
+        </video>
+        <!-- <img src="media/bg.jpg" alt="background" id="first" class="bg"> -->
+        <img src="media/last2.png" alt="ellieandjoel" id="last">
+        <h1 id="main-title">THE LAST OF US</h1>
+    </section>
+
+    <div class="ab-text">
+        <div class="heading">
+            <h2>THE LAST OF US</h2>
+            <p>Salgın sonucu mahvolan Amerika Birleşik Devletleri'nde yaptıkları tehlikeli yolculuktan beş yıl sonra Ellie ve Joel; Jackson, Wyoming'de kendilerine bir hayat kurdular. Hastalık kapan canlıların ve hayatta kalan çaresiz insanların oluşturduğu tehditlere rağmen, afetzedelerden oluşan ve gelişmekte olan bu toplumda yaşayarak nihayet huzurlu ve düzenli bir yaşama sahip olmayı başardılar.Vahşi bir olay sonucu bu huzur bozulduğunda Ellie, adaleti yerine getirmek ve intikam almak için amansız bir maceraya atılıyor. Ellie tüm sorumluları teker teker avlarken, yaptıklarının fiziksel ve duygusal açıdan yıkıcı etkileriyle yüzleşmek zorunda kalıyor.</p>
+        </div>
+
+        <div class="container">
+            <div class="box box1">
+                <div class="in">
+                    <img src="media/ellliedina.webp" alt="ellieanddina">
+                    <h3>Karmaşık ve duygusal bir hikâye</h3>
+                </div>
+            </div>
+            <div class="box box2">
+                <div class="in">
+                    <img src="media/elliearrow.webp" alt="elliearrow">
+                    <h3>Gerilim ve çaresizlik dolu aksiyon</h3>
+                </div>
+            </div>
+            <div class="box box3">
+                <div class="in">
+                    <img src="media/ellieout.webp" alt="ellieout">
+                    <h3>Göz alıcı ama tehlikeli bir dünya</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let first = document.getElementById("first");
+        let last = document.getElementById("last");
+        let text = document.getElementById("main-title");
+        
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY;
+            first.style.top = value * 0.7 + 'px';
+            last.style.bottom = value * 0.5 + 'px';
+            text.style.top = value * 1 + 'px';
+        });
+    </script>
+</body>
+</html>
